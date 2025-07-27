@@ -15,3 +15,13 @@ Project Objectives
 - Admin panel for local authorities to manage content and respond to submissions
 - Visual charts showing CDF allocation and usage
 - Mobile-friendly design for accessibility in low-bandwidth areas
+  
+ Publication
+ 
+📝 “Design and Development of a Community Engagement System for Kanyama Constituency”
+Published via Steacab Publishing
+
+🔗 View Article on LinkedIn
+
+
+
