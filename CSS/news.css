@@ -1,0 +1,702 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,600,700');
+@import url('https://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.css');
+
+
+/*------------------------------------------   IMAGE --------------------------------------*/
+
+#news_img {
+  width: 100%;
+  height: auto;
+}
+
+/*------------------------------------------ NEWS AND VIDEOS COLUMM -----------------------*/
+.row {
+  width: 70%;
+  margin: auto;
+  margin-top: 10px;
+  margin-bottom: 50px;
+
+
+}
+.columnnews h2 {
+  text-align:center;
+  padding: 20px;
+  color: green;
+}
+.columnnews h3{
+  color: black;
+  padding: 15px;
+  font-size: 25PX;
+
+}
+.columnnews p {
+  color: green;
+  word-spacing: 1.5px;
+  text-align: justify;
+  padding: 10px;
+  line-height: 30PX;
+}
+
+#news_img2 {
+  width: 100%;
+  height: auto;
+
+}
+
+
+/* Create two equal columns that floats next to each other */
+.columnnews {
+  float: left;
+  width: 50%;
+  padding: 40px;
+  height: auto; /* Should be removed. Only for demonstration */
+  background-color: #e1e8ed;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 1200px) {
+  .columnnews {
+    width: 100%;
+    
+  }
+  .row{
+    width: 100%;
+  }
+}
+
+/*-------------------------------------- I WANT TO: TEXT ------------------------------------*/
+.headerpic {
+  position: relative; 
+  text-align: center;
+
+}
+.center-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  padding: 20px;
+  border-radius: 20px;
+  color: white;
+  background-color:hsla(120,100%,50%,0.3);
+  font-size: 90px;
+  cursor: pointer;
+  transform: translate(-50%, -50%);
+}
+@media screen and (max-width: 1200px){
+  .center-text{
+      font-size: 60px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
+
+@media screen and (max-width: 992px){
+  .center-text{
+      font-size: 30px;
+    padding: 5px;
+    border-radius: 10px;
+  }
+}
+
+
+
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: dimgray;
+  overflow: hidden;
+  width: 70%;
+  margin: auto;
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: lightgray;
+  color: green;
+}
+
+/* Add an active class to highlight the current page */
+.topnav a.active {
+  background-color:hsla(120,100%,50%,0.3);
+  color: white;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.topnav .icon {
+  display: none;
+}
+
+/* When the screen is less than 600 pixels wide, hide all links, except for the first one ("Home"). Show the link that contains should open and close the topnav (.icon) */
+@media screen and (max-width: 1200px) {
+  .topnav a:not(:first-child) {display: none;}
+  .topnav a.icon {
+    float: right;
+    display: block;
+  }
+}
+
+/* The "responsive" class is added to the topnav with JavaScript when the user clicks on the icon. This class makes the topnav look good on small screens (display the links vertically instead of horizontally) */
+@media screen and (max-width: 1200px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive a.icon {
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  .topnav.responsive a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+}
+/*-------------------------------------------------- Group list --------------------------*/
+
+.container {
+  width: 70%;
+}
+.container H2{
+  color: green;
+}
+
+.list-group a {
+  font-size: 15px;
+  background-color: #e1e8ed;
+}
+.list-group a:hover {
+  color: green;
+}
+/*-------------------------------------- Green header background ----------------------------*/
+.cdfpic {
+  position: relative;
+  text-align: center;
+  background-color: darkgreen;
+  width: 100%;
+  height: 200px;
+  border-bottom-width: 5px;
+  border-bottom-style: solid;
+  border-bottom-color: #e1e8ed;
+}
+
+/*------------------------------------ CDF information ---------------------------------------*/
+.cdfapplication {
+  width: 70%;
+  margin: auto;
+ 
+}
+.cdfapplication h2 {
+  color: green;
+}
+.cdfapplication img {
+  width: 30%;
+  height: auto;
+  padding-bottom: 20px;
+}
+.cdfapplication P {
+  width: 60%;
+  text-align: justify;
+  float: right;
+  font-size: 20PX;
+}
+
+.btn {
+  background-color: green;
+  border: none;
+  color: white;
+  padding: 12px 30px;
+  cursor: pointer;
+  font-size: 20px;
+  margin: auto;
+}
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: gray;
+  color: white;
+}
+
+
+#cdflaon {
+  text-align: right;
+}
+#loanpic{
+  float: right;
+  
+
+}
+#loantext{
+  float: left;
+}
+
+
+
+@media screen and (max-width:992px){
+  .cdfapplication{
+    display: block;
+    width: 90%;
+    text-align: center;
+    
+  }
+  .cdfapplication img{
+    width: 100%;
+    height: auto;
+  }
+  .cdfapplication P{
+    width: 100%;
+  }
+  #cdflaon {
+  text-align: center;
+}
+}
+
+.pbar {
+  margin: auto;
+  width: 70%;
+  padding-top: 50px;
+  display: block;
+}
+.pbar h2{
+  color: green;
+  padding-bottom: 20px;
+}
+
+.pbar h3 {
+  line-height: 32px;
+  font-size: 20px;
+  text-align: justify;
+}
+
+h3 .projimg {
+  width: 30%;
+  height: 300px;
+  padding: 5px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+@media screen and (max-width:992px){
+   h3 .projimg{
+    width: 100%;
+    height: 300px;
+    display: block;
+  }
+}
+
+/*-------------------------------------------------------------------- Gallary--------------------------*/
+.rowp{
+  width: 70%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.rowp > .columnp {
+  padding: 0 8px;
+
+}
+
+.rowp:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.columnp {
+  float: left;
+  width: 25%;
+}
+
+
+img.hover-shadow {
+  transition: 0.3s;
+}
+
+.hover-shadow:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.wardlinks {
+  width: 30%;
+  text-align: justify;
+  font-size: 17px;
+}
+
+.wardlinks b {
+  font-size: 30px;
+}
+.wardlinks a {
+  font-size: 20px;
+  text-transform: uppercase;
+  
+}
+
+@media screen and (max-width:992px){
+  .wardlinks {
+  width: 90%;
+  text-align: justify;
+  font-size: 17px;
+  margin: auto;
+}
+}
+.wardcouncil{
+  width: 70%;
+  margin: auto;
+  font-size: 20px;
+  padding: 20px;
+}
+
+.cdfapplication .list-group1{
+  width: 40%;
+}
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+.flip-card {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  float:left;
+  margin:15px
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-front {
+  background-color: hsla(120,100%,50%,0.3);;
+  color: black;
+}
+
+.flip-card-back {
+
+  background-color: lightgreen;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+
+.flip-card-back a{
+  text-decoration: none;
+}
+.flip-card-back h4{
+  word-spacing: 5px;
+  line-height: 25px;
+  color: black;
+}
+
+
+
+/*----------------------------------------(WDC ORANGE)--------------*/
+.flip-cardW {
+  background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  float:left;
+  margin:15px
+}
+
+.flip-card-innerW {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-cardW:hover .flip-card-innerW {
+  transform: rotateY(180deg);
+}
+
+.flip-card-frontW, .flip-card-backW {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
+}
+
+.flip-card-frontW {
+  background-color: orange;
+  color: black;
+}
+
+.flip-card-backW {
+
+  background-color: orange;
+  color: white;
+  transform: rotateY(180deg);
+  text-align: center;
+}
+
+
+.flip-card-backW a{
+  text-decoration: none;
+}
+.flip-card-backW h4{
+  word-spacing: 5px;
+  line-height: 25px;
+  color: black;
+}
+@media screen and (max-width: 1590px){
+  .flip-card {
+   background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 5px;
+  }
+  .flip-cardW {
+   background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 5px;
+  }
+}
+@media screen and (max-width: 678px){
+  .flip-card {
+   background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 50px;
+
+  }
+  .flip-cardW {
+   background-color: transparent;
+  width: 300px;
+  height: 300px;
+  perspective: 1000px;
+  margin: 50px;
+  }
+}
+
+
+/*----------------------------------------------------------------------------------------------------------------------*/
+
+
+.alert {
+  padding: 20px;
+  width: 70%;
+  background-color: #2196F3;;
+  color: white;
+  margin: auto;
+  font-size: 25px;
+}
+
+.closebtn {
+  margin-left: 15px;
+  color: white;
+  font-weight: bold;
+  float: right;
+  font-size: 22px;
+  line-height: 20px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.closebtn:hover {
+  color: black;
+}
+
+
+
+
+/* Style inputs */
+input[type=text], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+}
+
+input[type=submit] {
+  background-color: green;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: gray;
+}
+
+/* Style the container/contact section */
+.containerform {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 10px;
+}
+
+/* Create two columns that float next to eachother */
+.columnform {
+  float: left;
+  width: 50%;
+  margin-top: 6px;
+  padding: 20px;
+}
+
+/* Clear floats after the columns */
+.rowform:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .columnform, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+  #contactmap {
+    width: 100%;
+    height: 50%;
+  }
+}
+@media screen and (max-width: 1920px){
+ #contactmap{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:992px){
+.healthvideos iframe {
+ width: 100%;
+ height: auto;
+}
+}
+@media screen and (max-width:992px){
+.policemap iframe {
+ width: 100%;
+ height: 300px;
+}
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 60%;
+  float: right;
+  margin-top: -17%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+@media screen and (max-width:992px){
+table {
+ width: 100%;
+ height: auto;
+ margin-top: 10%;
+}
+}
+
+
+.CDFFORMS2022 button{
+  width: 30%;
+  margin: 5px;
+}
+
+.CDFGUID2022 button{
+  width: 30%;
+  margin: 5px;
+}
+
+.CDFFORMS2022 .btn {
+  background-color: orange;
+ 
+}
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: gray;
+  color: white;
+}
+
+.CDFGUID2022 .btn {
+  background-color: RED;
+ 
+}
+/* Darker background on mouse-over */
+.btn:hover {
+  background-color: gray;
+  color: white;
+}
+
+
+@media screen and (max-width:1900px){
+  .CDFFORMS2022 button{
+    width: 100%;
+    margin: 5px;
+
+
+  }
+  .CDFGUID2022 button{
+    width: 100%;
+    margin: 5px;
+
+
+  }
+  .other_downloads button{
+    width: 100%;
+    font-size: 15px;
+  }
+
+}
+
+
+.faqlinks{
+  width: 70%;
+  margin: auto;
+  font-size: 20px;
+}
